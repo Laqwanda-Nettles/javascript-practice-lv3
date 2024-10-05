@@ -7,7 +7,7 @@ function createCircle(radius) {
     },
     getCircumference() {
       return 2 * Math.PI * radius;
-    }
+    },
   };
 }
 
@@ -33,7 +33,7 @@ function createDog(name, breed) {
     breed,
     bark() {
       return `${this.name} says woof!`;
-    }
+    },
   };
 }
 
@@ -49,5 +49,16 @@ class Dog {
   }
 }
 
+class Food {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+
+  eat() {
+    return `${this.name} are my favorite type of ${this.type}!`;
+  }
+}
+
 // Exporting all functions and classes at the end of the file
-export { createCircle, Circle, createDog, Dog };
+export { createCircle, Circle, createDog, Dog, Food };
