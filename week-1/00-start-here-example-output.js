@@ -1,4 +1,10 @@
-import { createCircle, Circle, createDog, Dog } from './objects.js';
+import {
+  createCircle,
+  Circle,
+  createDog,
+  Dog,
+  Food,
+} from "./00-start-here-example-objects.js";
 
 // Instances created using the factory functions
 const circle1 = createCircle(5);
@@ -15,3 +21,9 @@ const dog2 = new Dog("Max", "German Shepherd");
 console.log(circle2.getArea()); // Output: 153.93804002589985
 console.log(circle2.getCircumference()); // Output: 43.982297150257104
 console.log(dog2.bark()); // Output: "Max says woof!"
+
+const dog3 = new Dog("Scooby", "Boxer");
+console.log(dog3.bark());
+
+const food1 = new Food("Pears", "Fruit");
+console.log(food1.eat());
